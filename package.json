@@ -1,0 +1,34 @@
+{
+  "name": "image-api",
+  "version": "1.0.0",
+  "description": "udacity Full stack course",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc && jasmine",
+    "nodemon": "nodemon src/index.ts",
+    "eslint": "eslint \"src/**/*.{ts,js}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/express": "^5.0.6",
+    "@types/jasmine": "^6.0.0",
+    "@types/node": "^25.3.0",
+    "@types/supertest": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "globals": "^17.3.0",
+    "jasmine": "^6.1.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "sharp": "^0.34.5",
+    "supertest": "^7.2.2"
+  }
+}
