@@ -1,0 +1,9 @@
+endpoint :
+ 1 - http://localhost:3000/api : main route
+ 2 - http://localhost:3000/api/image?fileName=fjord&width=500&height=200 : image route
+
+npm run build to compile typscript code to javascript and test 
+npm test to test 
+npm run nodemon to run a server
+npm run format to run prettier
+npm run lint to run eslint

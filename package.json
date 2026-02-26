@@ -6,7 +6,9 @@
   "scripts": {
     "build": "npx tsc && jasmine",
     "nodemon": "nodemon src/index.ts",
-    "eslint": "eslint \"src/**/*.{ts,js}\""
+    "lint": "eslint \"src/**/*.{ts,js}\"",
+    "test": "jasmine",
+    "format": "npx prettier --write ."
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +21,7 @@
     "@typescript-eslint/eslint-plugin": "^8.56.1",
     "@typescript-eslint/parser": "^8.56.1",
     "nodemon": "^3.1.14",
+    "prettier": "^3.8.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1"

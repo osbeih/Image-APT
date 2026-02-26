@@ -12,7 +12,13 @@ describe("Test endpoint response", () => {
 
 describe("Test Image endpoint", () => {
   it("gets the Image endpoint", async () => {
-    const response = await request.get("/api/image");
+    const fileName = "fjord";
+    const width = 200;
+    const height = 200;
+    const response = await request.get(
+      `/api/image?fileName=${fileName}&width=${width}&height=${height}`,
+    );
     expect(response.status).toBe(200);
+    expect(response.headers["content-type"]).toContain("image/jpeg");
   });
 });
