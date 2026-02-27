@@ -1,5 +1,7 @@
 import app from "../index";
 import supertest from "supertest";
+import processImage from "../utilities/processImage";
+import fs from "fs";
 
 const request = supertest(app);
 
@@ -20,5 +22,12 @@ describe("Test Image endpoint", () => {
     );
     expect(response.status).toBe(200);
     expect(response.headers["content-type"]).toContain("image/jpeg");
+  });
+});
+
+describe("test process image", () => {
+  it("resize the image", async () => {
+    const outputPath = await processImage("fjord", 200, 200);
+    expect(fs.existsSync(outputPath)).toBeTrue();
   });
 });
